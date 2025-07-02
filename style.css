@@ -1,0 +1,229 @@
+/* style.css - Swetha's Galaxy-Themed Portfolio */
+
+/* General Reset and Font */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1c1c1c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #c0c0c0;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #ff4c29;
+}
+
+.resume-btn {
+  background: #ff4c29;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background: #e8431f;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #121212;
+}
+
+.hero .text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero h1 span {
+  color: #ff4c29;
+}
+
+.hero p {
+  color: #a0a0a0;
+  line-height: 1.8;
+}
+
+.hero img {
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Section Headings */
+.section {
+  padding: 60px 10%;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature-box {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 30px;
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box i {
+  font-size: 2rem;
+  color: #ff4c29;
+  margin-bottom: 15px;
+}
+
+.feature-box h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  color: #bbb;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 300px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card .content {
+  padding: 20px;
+}
+
+.project-card .tag {
+  color: #ff4c29;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.project-card .title {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Education */
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-card {
+  background: #1d1d1d;
+  padding: 20px;
+  border-left: 5px solid #ff4c29;
+  border-radius: 5px;
+}
+
+.education-card h4, .education-card p {
+  margin: 5px 0;
+}
+
+.education-card .score {
+  float: right;
+  background: #ff4c29;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+/* Contact */
+form input, form textarea {
+  background: #1c1c1c;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: #ff4c29;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
