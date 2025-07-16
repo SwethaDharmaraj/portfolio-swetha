@@ -111,6 +111,20 @@
       text-align: center;
       color: #888;
     }
+    .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: white;
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
   </style>
 </head>
 
@@ -167,92 +181,127 @@
   </section>
 
   <section id="projects" class="projects py-5">
-    <h2 class="section-title">My Projects</h2>
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card bg-dark text-white">
-            <img src="assets\LIBRARY-SQL.jpg" class="card-img" alt="CPU Scheduling">
-            <div class="card-body">
-              <h6 class="text-warning">Library Management System</h6>
-              <p>A project for helping to manage the books in library by tracking the availability of books in library using Python,MySQL</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-dark text-white">
-            <img src="assets\Portfolio.png" class="card-img" alt="Portfolio">
-            <div class="card-body">
-              <h6 class="text-warning">PORTFOLIO</h6>
-              <p>A project to display my achievements using html,css,javascript</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-dark text-white">
-            <img src="assets\job.jpg" class="card-img" alt="Elective Course">
-            <div class="card-body">
-              <h6 class="text-warning">Job Application Portal</h6>
-              <p>A project developed for choosing jobs based on their ability userfriendly</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="education py-5">
-    <h2 class="section-title">My Education / Skills</h2>
-    <div class="container">
-      <div class="card p-4 mb-3">
-        <h5>Bachelor's Degree</h5>
-        <p>Kongu Engineering College (2023 - 2027)</p>
-        <span class="text-warning">8.85 CGPA</span>
-      </div>
-      <div class="card p-4">
-        <h5>HSC</h5>
-        <p>Karunya Vidya Bhavan Matric Higher Secondary School,Perundurai,Erode</p>
-        <span class="text-warning">89%</span>
-      </div>
-    </div>
-  </section>
-
-<section id="contact" class="contact py-5">
-  <h2 class="section-title">Contact Me</h2>
+  <h2 class="section-title">My Projects</h2>
   <div class="container">
-    <div class="row">
-      <!-- Contact Form -->
-      <div class="col-md-6 mb-4">
-        <form class="contact-form">
-          <input type="text" class="form-control mb-3" placeholder="Your Name" required />
-          <input type="email" class="form-control mb-3" placeholder="Your Email" required />
-          <input type="text" class="form-control mb-3" placeholder="Subject" />
-          <textarea class="form-control mb-3" placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit" class="btn btn-danger">Send Message</button>
-        </form>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="glass-card p-4">
+          <img src="assets/LIBRARY-SQL.jpg" class="img-fluid rounded mb-3" alt="Library SQL">
+          <h6 class="text-warning">Library Management System</h6>
+          <p>A project for helping to manage the books in library by tracking the availability of books using Python, MySQL</p>
+        </div>
       </div>
 
-      <!-- Contact Info -->
+      <div class="col-md-4">
+        <div class="glass-card p-4">
+          <img src="assets/Portfolio.png" class="img-fluid rounded mb-3" alt="Portfolio">
+          <h6 class="text-warning">PORTFOLIO</h6>
+          <p>A project to display my achievements using HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="glass-card p-4">
+          <img src="assets/job.jpg" class="img-fluid rounded mb-3" alt="Job Portal">
+          <h6 class="text-warning">Job Application Portal</h6>
+          <p>A project developed for choosing jobs based on their ability — user-friendly and efficient.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="glass-card p-4">
+          <img src="assets/Library-mongodb.png" class="img-fluid rounded mb-3" alt="Library MongoDB">
+          <h6 class="text-warning">Library Management System</h6>
+          <p>A project for helping to manage the books in library by tracking availability using Python, MongoDB</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <section id="education" class="education py-5">
+  <h2 class="section-title">My Education / Skills</h2>
+  <div class="container">
+    <div class="row g-4">
       <div class="col-md-6">
-        <div>
-          <h5><i class="fas fa-map-marker-alt me-2 text-danger"></i>Address</h5>
-          <p>Seenapuram, Erode District, Tamil Nadu, India</p>
-
-          <h5><i class="fas fa-phone me-2 text-danger"></i>Phone</h5>
-          <p>+91 8122635618</p>
-
-          <h5><i class="fas fa-envelope me-2 text-danger"></i>Email</h5>
-          <p>swethad2005@gmail.com</p>
-
-          <h5><i class="fas fa-globe me-2 text-danger"></i>GitHub</h5>
-          <a href="https://github.com/SwethaDharmaraj" target="_blank" class="text-white">
-            github.com/SwethaDharmaraj
-          </a>
+        <div class="glass-card p-4 h-100">
+          <h5 class="text-warning">Bachelor's Degree</h5>
+          <p>Kongu Engineering College (2023 - 2027)</p>
+          <p>Department: Computer Science and Engineering</p>
+          <span class="fw-bold">CGPA: <span class="text-warning">8.85</span></span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card p-4 h-100">
+          <h5 class="text-warning">HSC</h5>
+          <p>Karunya Vidya Bhavan Matric Higher Secondary School</p>
+          <p>Perundurai, Erode</p>
+          <span class="fw-bold">Score: <span class="text-warning">89%</span></span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+<section id="contact" class="contact py-5">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Contact Info -->
+      <div class="col-md-5">
+        <div class="glass-card p-4 h-100">
+          <h5><i class="fas fa-map-marker-alt me-2 text-danger"></i><strong>Address</strong></h5>
+          <p>Seenapuram, Erode District, Tamil Nadu, India</p>
+
+          <h5><i class="fas fa-phone me-2 text-danger"></i><strong>Phone</strong></h5>
+          <p>+91 8122635618</p>
+
+          <h5><i class="fas fa-envelope me-2 text-danger"></i><strong>Email</strong></h5>
+          <p>swethad2005@gmail.com</p>
+
+          <h5><i class="fas fa-globe me-2 text-danger"></i><strong>GitHub</strong></h5>
+          <a href="https://github.com/SwethaDharmaraj" target="_blank" class="text-white">
+            github.com/SwethaDharmaraj
+          </a>
+
+          <h5><i class="fab fa-linkedin me-2 text-danger"></i><strong>LinkedIn</strong></h5>
+          <a href="https://www.linkedin.com/in/swetha-dharmaraj-807128301" target="_blank" class="text-white">
+            linkedin.com/in/swethadharmaraj
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <div class="glass-card p-4 h-100">
+          <form class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- Below <section id="contact" ...> add this if you want a full "Resume" section too -->
 <section id="resume" class="py-5 text-center">
@@ -264,7 +313,7 @@
 
 
   <footer>
-    &copy; 2025 Swetha Dharamaraj | Portfolio powered by HTML + CSS + Bootstrap
+    &copy; 2025 Swetha Dharamaraj 
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
